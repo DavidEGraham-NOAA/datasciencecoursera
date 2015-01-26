@@ -1,0 +1,16 @@
+This R script cleans and analyzes Samsung acceleromoter data. The data files from 
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+must be in your working directory. The script:
+
+Gets the original features list
+Turns the features into unique names
+Gets the subjects
+Merges the subjects and the observations
+Merges the test and training data
+Merges the activity ids (y_all) with the observations(x_all)
+Adds the activity_id column to the variable names vector
+Assigns the column names to the data
+Writes our results to a text file
+
+It requires dplyr.
